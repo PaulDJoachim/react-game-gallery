@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import GalleryList from '../GalleryList/GalleryList'
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
@@ -10,7 +13,8 @@ class App extends Component {
         </header>
         <br/>
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        <img src="images/goat_small.jpg" alt="a goat stands on white rocks in front of pine trees"/>
+        <GalleryList/>
       </div>
     );
   }
