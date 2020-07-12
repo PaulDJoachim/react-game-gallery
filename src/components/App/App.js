@@ -57,8 +57,6 @@ class App extends Component {
           <h1 className="App-title">Games of my life</h1>
         </header>
         <main>
-          <button onClick={this.likeButton}>Like</button>
-          <p>Likes: {}</p>
           <GalleryList items={this.state.galleryItems} addLike={this.addLike}/>
         </main>
       </div>

@@ -12,3 +12,16 @@
 body{
   background-image: linear-gradient(#487a39, #375c2b);
 }
+
+ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+li > p {
+  max-width: 460px;
+}
