@@ -5,7 +5,7 @@ const pg = require('pg');
 const Pool = pg.Pool;
 
 const pool = new Pool({
-    database: 'react-gallery', // database name (this will change)
+    database: 'react_gallery', // database name (this will change)
     host: 'localhost', // where to find the database
     user: 'postgres',
     port: 5432,        // port for finding the database
