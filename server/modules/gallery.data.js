@@ -1,3 +1,5 @@
+// this file is no longer used since database feature was added.
+
 const galleryItems = [
     { id: 1, path: "images/myst.jpg", title: 'Myst', description: 'Myst was unlike anything before, it created a new genre of adventure game and was pretty much all I could think about in kindergarden. With stunning visuals and an atmospheric soundtrack, Myst topped video game sales records for almost a decade, and is partially responsible for the widespread adoption of the CD-ROM drive.', likes: 0 },
     { id: 2, path: "images/duckGame.jpg", title: 'Duck Game', description: 'I\'ve played about 2,500 hours of Duck Game. It\'s a multi-player game where everyone is a cute duck with a funny hat and also you\'re all trying to kill each other. It has a button for quacking, so most of the audio is mix of gunfire, explosions, and duck quacks. It\'s the stupidest funniest game I\'ve ever seen!', likes: 0 },
