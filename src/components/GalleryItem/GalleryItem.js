@@ -6,7 +6,8 @@ class GalleryItem extends Component {
     return (
       <li>
         <h1>This is a Gallery Item</h1>
-        <img src="images/goat_small.jpg" alt="a goat"/>
+        <img src={this.props.item.path} alt={this.props.item.title}/>
+        <p>{this.props.item.description}</p>
       </li>
     );
   }

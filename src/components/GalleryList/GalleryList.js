@@ -6,11 +6,9 @@ class GalleryList extends Component {
   render() {
     return (
       <>
-        <h1>This is a Gallery List</h1>
-        {console.log('this.props.items contains:', this.props.items)}
         <ul>
-          {this.props.items.map((item, index)=>
-          <GalleryItem key={index}/>)}
+          {this.props.items.map((item)=>
+          <GalleryItem key={item.id} item={item}/>)}
         </ul>
       </>
     );

@@ -41,11 +41,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Gallery of my life</h1>
         </header>
-        <br/>
-        {console.log('this.state.galleryItems has:', this.state.galleryItems)}
-        {/* <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg" alt="a goat stands on white rocks in front of pine trees"/> */}
-        <GalleryList items={this.state.galleryItems}/>
+        <main>
+          <GalleryList items={this.state.galleryItems}/>
+        </main>
       </div>
     );
   }
