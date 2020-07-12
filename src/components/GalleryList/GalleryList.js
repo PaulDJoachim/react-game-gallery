@@ -8,7 +8,7 @@ class GalleryList extends Component {
       <>
         <ul>
           {this.props.items.map((item)=>
-          <GalleryItem key={item.id} item={item}/>)}
+          <GalleryItem key={item.id} item={item} addLike={this.props.addLike}/>)}
         </ul>
       </>
     );

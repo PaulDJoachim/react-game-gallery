@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    console.log('Inventory mounted');
+    console.log('App mounted');
     this.getItems();
   } // end componentDidMount
 
@@ -26,13 +26,27 @@ class App extends Component {
         galleryItems: response.data
       })
     }).catch((err)=>{
-      console.log('error!',err);
+      console.log('error on /gallery GET',err);
     });
-  
   }// end getItems
 
 
-
+  addLike = (id) =>{
+    console.log('CLICK! on ID #', id);
+    Axios({
+      method: 'PUT',
+      url: 'gallery/like/' + id,
+    }).then ((response)=>{
+      console.log('back from PUT:', response.data);
+      this.getItems()
+      // hold data in state.items
+      // this.setState({
+      //   galleryItems: response.data
+      // })
+    }).catch((err)=>{
+      console.log('error!',err);
+    });
+  }
 
 
   render() {
@@ -42,7 +56,9 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <main>
-          <GalleryList items={this.state.galleryItems}/>
+          <button onClick={this.likeButton}>Like</button>
+          <p>Likes: {}</p>
+          <GalleryList items={this.state.galleryItems} addLike={this.addLike}/>
         </main>
       </div>
     );
