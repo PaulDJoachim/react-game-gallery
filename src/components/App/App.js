@@ -9,6 +9,7 @@ class App extends Component {
     galleryItems: []
   }
 
+
   componentDidMount(){
     console.log('App mounted');
     this.getItems();
@@ -53,7 +54,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of my life</h1>
+          <h1 className="App-title">Games of my life</h1>
         </header>
         <main>
           <button onClick={this.likeButton}>Like</button>
