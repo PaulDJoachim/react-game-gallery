@@ -32,7 +32,7 @@ class GalleryItem extends Component {
           <>
           <p class="desc">{this.props.item.description}</p>
           <button id={this.props.item.id} onClick={this.addLikeHandle}>Like</button>
-          <p>likes:{this.props.item.likes}</p>
+          <p class="likeCount">Likes:{this.props.item.likes}</p>
           </>
           :<img src={this.props.item.path} alt={this.props.item.title} onClick={this.toggleDetails}/>
         }

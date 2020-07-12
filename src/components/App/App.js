@@ -40,10 +40,6 @@ class App extends Component {
     }).then ((response)=>{
       console.log('back from PUT:', response.data);
       this.getItems()
-      // hold data in state.items
-      // this.setState({
-      //   galleryItems: response.data
-      // })
     }).catch((err)=>{
       console.log('error!',err);
     });
@@ -54,7 +50,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Games of my life</h1>
+          <h1 className="App-title">A Gallery of Games</h1>
         </header>
         <main>
           <GalleryList items={this.state.galleryItems} addLike={this.addLike}/>
