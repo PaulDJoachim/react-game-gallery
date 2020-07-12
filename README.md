@@ -8,7 +8,7 @@ This application works as a gallery for displaying multiple images as well as as
 
 ## Example GIF
 
-![Overview](images/example.gif)
+![Overview](public/images/example.gif)
 
 ## Setup
 
