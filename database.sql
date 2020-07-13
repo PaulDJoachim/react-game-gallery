@@ -1,4 +1,4 @@
--- CREATE DATABASE "react-gallery";
+-- CREATE DATABASE "react_gallery";
 
 -- Table structure
 CREATE TABLE gallery (
